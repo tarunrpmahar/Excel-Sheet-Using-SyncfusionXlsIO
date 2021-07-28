@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Excel Sheet";
+}
+
+<div style="margin-top: 4rem; margin-left: 31rem;">
+    @{Html.BeginForm("CreateDocument", "Excel", FormMethod.Get);
+        {
+            <div>
+                <input type="submit" value="Download" class="btn btn-lg btn-outline-danger" />
+            </div>
+        }
+        Html.EndForm();
+    }
+
+    <br />
+
+    @{Html.BeginForm("PlanSheet", "Excel", FormMethod.Get);
+        {
+            <div>
+                <input type="submit" value="Plan Sheet" class="btn btn-lg btn-outline-success" />
+            </div>
+        }
+        Html.EndForm();
+    }
+</div>
